@@ -1,0 +1,234 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(./images/donation-boxes-background-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #baaaaa;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgb(202, 192, 192);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color:white;
+    color: black;
+    font-family: cursive;
+  }
+  .active img{
+    width: 60px; 
+    height: 1.2rem; 
+  }
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.donate-section {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
+    margin-top: 15%;
+    position: relative;
+  
+}
+.donate-section h2{
+    font-size: xx-large;
+    font-family:'Roboto', sans-serif;
+    color: white;
+}
+.donate-section p{
+    margin-top: 20px;
+    font-size: x-large;
+    font-family: monospace;
+}
+.payment-section h2{
+    font-size: xx-large;
+    font-family: fantasy; 
+}
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: auto;
+}
+/*image gallery */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .head {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+/* Media Queries for Responsive Design */
+
+/* Small screens (phones) */
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #007BFF;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        color: #fff;
+    }
+}
+
+/* payment.html*/
+.payment-section{
+
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
+    margin-top: 15%;
+    position: relative; 
+}
+.payment-section h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0.5px 0;
+    background:PapayaWhip;
+    color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+footer > p{
+    margin-top: 20px;
+}
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 601px) {
+    section.donate-section {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    section.donate-section {
+      font-size: 30px;
+    }
+}

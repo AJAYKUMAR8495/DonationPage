@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Donate Website</title>
+</head>
+<body>
+    <header>      
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home" class="active"><img src="./images/logo.2.JPG" alt="logo">The Sparks Foundation</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    </header>
+    <div class="container my-4">
+        <h2  style="text-align: center;"><strong>Contact Us</strong></h2>
+        <form action="mailto:TheSparksFoundation@gmail.com" method="post">
+            <div class="form-group">
+                <label for="exampleFormControlInput1"><b>Email Address</b></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"><b>Tell Us About Yourself</b></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea2"><b>Elaborate Your Concern</b></label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 The Sparks Foundation Donation</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
